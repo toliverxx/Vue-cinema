@@ -1,0 +1,256 @@
+@media(max-width:1440px) {
+    .premier {
+        background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+    }
+}
+
+
+
+@media(max-width:1100px) {
+    .header {
+        height: 490px;
+    }
+
+    .films__content {
+        column-gap: 30px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .films__item {
+        width: 320px;
+    }
+
+    .films__img {
+        object-position: top;
+    }
+
+    .collections__content {
+        overflow-x: scroll;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .collections__item {
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+}
+
+@media(max-width:700px) {
+    .films__item {
+        width: 255px;
+    }
+
+    .films__content {
+        justify-content: center;
+    }
+
+    .series__item:nth-of-type(2) {
+        grid-column: span 4;
+        grid-row: 3;
+        
+    }
+
+    .series__text {
+        margin: 10px 0;
+        line-height: 20px;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        text-align: justify;
+    }
+
+    .series__item:nth-of-type(3),
+    .series__item:nth-of-type(4),
+    .series__item:nth-of-type(5),
+    .series__item:nth-of-type(6) {
+        grid-column: span 2;
+    }
+
+    .series__item:nth-of-type(1) .series__img {
+        object-position: right;
+    }
+}
+
+@media(max-width:627px) {
+    .header__title {
+        font-size: 50px;
+        line-height: 100%;
+    }
+
+    .header {
+        height: max-content;
+        padding: 20px 0;
+    }
+}
+
+
+@media(max-width:575px) {
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        flex-direction: column;
+        z-index: 999;
+        backdrop-filter: blur(15px);
+        bottom: 0;
+        box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.5);
+        transform: translateX(-110%);
+        transition: 0.3s linear;
+    }
+
+    .nav__link {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav {
+        padding: 15px 0;
+    }
+
+    .reklama {
+        padding: 10px 0;
+    }
+
+    .reklama>svg {
+        width: 40px;
+        height: 30px;
+    }
+
+    .menu-btn:focus>span {
+        background: transparent;
+    }
+
+    .menu-btn:focus::before {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .menu-btn:focus::after {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .menu-btn:focus+.nav__list {
+        transform: translateX(0);
+    }
+
+    .premier__video {
+        display: none;
+    }
+
+    .premier {
+        background: #fff;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .premier__text {
+        margin: 15px 0;
+    }
+}
+
+@media(max-width:496px) {
+    .header__title {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .header__btn,
+    .header__buttons>li {
+        width: 100%;
+    }
+
+    .header__text {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:425px) {
+    .header__buttons {
+        flex-direction: column;
+    }
+
+    .premier__img {
+        width: 100%;
+    }
+
+    .premier__text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .series__item:nth-of-type(1) .series__name {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .series__text {
+        margin: 0;
+    }
+    .footer__content{
+        justify-content: center;
+    }
+}
+
+@media(max-width:375px) {
+    .header__title {
+        font-size: 35px;
+    }
+
+    .premier__btn {
+        width: 100%;
+    }
+
+    .series__item:nth-of-type(1) .series__name {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .series__text {
+        display: none;
+    }
+
+    .series__item:nth-of-type(1) {
+        grid-row: 1;
+    }
+
+    .series__item:nth-of-type(3),
+    .series__item:nth-of-type(4),
+    .series__item:nth-of-type(5),
+    .series__item:nth-of-type(6) {
+        grid-column: span 4;
+    }
+
+    .series__btn {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:360px) {
+    .collections__item {
+        width: 100%;
+    }
+}
+
+@media(max-width:320px) {
+    .header__title {
+        font-size: 31px;
+    }
+    .series__item:nth-of-type(1) .series__name{
+        font-size: 27px;
+    }
+    .footer__info{
+        font-size: 15px;
+    }
+}
